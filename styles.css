@@ -1,0 +1,63 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Navigation Menu Styling */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  padding: 20px 30px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover Effect */
+#navbar ul li a:hover {
+  color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Scroll Effect */
+#navbar.scrolled {
+  background-color: #f64848;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #navbar ul {
+      flex-direction: column;
+  }
+
+  #navbar ul li {
+      padding: 15px;
+  }
+}
